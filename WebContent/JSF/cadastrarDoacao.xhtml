@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+ 
+     <h:head>
+ 
+     </h:head>
+ 
+     <h:body>
+     <h:form>
+         <h2> Cadastrar Doação </h2>
+    <h:panelGrid columns="2" cellpadding="5">
+
+ 	
+ 		<p:outputLabel for="item" value="Item:" />
+   		 <p:inputText id="item" value="#{beanCadastrarDoacao.item}" required="true" />
+   		 
+   		 <p:outputLabel for="quantidade" value="Quantidade:" />
+ 		  <p:inputText id="quantidade" value="#{beanCadastrarDoacao.quantidade}" required="true" />
+ 		  
+   		 <p:outputLabel for="telefone" value="Telefone Para Contato" />
+ 		  <p:inputMask id="telefone" value="#{beanCadastrarDoacao.telefone}" mask="(99) 9999-9999" required="true"/>
+ 		  
+ 		  <p:outputLabel for="cep" value="Cep:" />
+ 		  <p:inputText id="cep" value="#{beanCadastrarDoacao.cep}" required="true" />
+ 		  
+ 		  <p:outputLabel for="estado" value="Estado:" />
+ 		  <p:inputText id="estado" value="#{beanCadastrarDoacao.estado}" required="true" />
+ 		  
+ 		  <p:outputLabel for="bairro" value="Bairro:" />
+ 		  <p:inputText id="bairro" value="#{beanCadastrarDoacao.bairro}" required="true" />
+ 		  
+ 		  <p:outputLabel for="rua" value="Rua:" />
+ 		  <p:inputText id="rua" value="#{beanCadastrarDoacao.rua}" required="true" />
+ 		  
+ 		  <p:outputLabel for="numero" value="Numero:" />
+ 		  <p:inputText id="numero" value="#{beanCadastrarDoacao.numero}" required="true" />
+ 		  
+ 		   <p:outputLabel for="complemento" value="Complemento:" />
+ 		  <p:inputText id="complemento" value="#{beanCadastrarDoacao.complemento}" required="true" />
+ 	
+ 		  
+       <p:commandButton value="Salvar" action="#{beanCadastrarPessoa.salvarDoacao()}">
+		<f:ajax render="@form" resetValues="true"/> 
+       </p:commandButton>
+ 		    
+ 	
+     
+     </h:panelGrid>
+ 	
+ 	 </h:form>
+     </h:body>
+</html>

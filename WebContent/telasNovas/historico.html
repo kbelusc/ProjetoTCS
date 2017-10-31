@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <!-- Compiled and minified CSS -->
+ 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+       
+      <style>
+      
+      			#cartao {						
+						padding: 10px;
+					}
+					
+						#tableHistorico {
+				    margin: 0;
+			    	position: absolute;
+			    	right: 0%;
+			    	left: 15%;
+			    	bottom:0%;	 
+			    	top:0%;
+					}
+ 
+      </style>    
+    </head>
+
+	  <body background="cinza3.jpg">
+	    <div id="tela do usuario">
+		    <ul id="slide-out" class="side-nav fixed">
+			    <li>
+				    <div class="user-view">
+				      <div class="background">
+				          <img src="backgrounduser.jpg">
+				      </div>
+				     	 <a href="#!user"><img class="circle" src="arvore.jpg"></a>
+				     	 <a href="#!name"><span class="white-text name">John Doe</span></a>
+				      	<a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+				      	
+				    </div>
+			    </li>
+		    
+		 
+		   		 <li><a class="waves-effect" href="telaPrincipal.html">Home</a></li>
+		  		 <li><div class="divider"></div></li>
+		   		  <li><a href="configurarDados.html"><i class="material-icons">account_circle</i>Atualize sua conta</a></li>
+		         <li><a href="historico.html"><i class="material-icons">history</i>Histórico de doações</a></li>
+		         <li><a href="cadastrarDoacao.html"><i class="material-icons">assignment</i>Cadastrar doação</a></li>		 
+		  		  <li><a class="subheader">Contato</a></li>
+			   	<li class="no-padding">
+			    	<ul class="collapsible collapsible-accordion">
+			    		<li>
+							<a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a> 
+							<div class="collapsible-body">
+							      <ul>
+								     <li><a href="#!">First</a></li>
+								     <li><a href="#!">Second</a></li>
+								      <li><a href="#!">Third</a></li>
+								      <li><a href="#!">Fourth</a></li>
+							      </ul>
+							</div> 	
+			    		</li>
+			    	</ul>		    	
+			     </li>
+		    </ul>
+		 </div> 	
+		  <a class="btn hide-on-large-only" data-activates="slide-out"><i class="material-icons">menu</i></a>
+
+	  
+	   <div id="tableHistorico" class="col s12">
+			 	<div class="container">
+			 		<div class="row" >
+			 	 		<h3> Histórico de doaçoes </h3>
+			 		</div>
+			 	
+			     	 <table class="striped">
+				        <thead>
+				          <tr>
+				              <th>Doação</th>
+				              <th>item</th>
+				              <th>Local</th>
+				              <th>Quem recebeu</th>
+				              <th>Data Inicial</th>
+				              <th>Data Final</th>
+				          </tr>
+				        </thead>
+				
+				      <tbody>
+				          <tr>
+				            <td>1</td>
+				            <td>item1</td>
+				            <td>bela vista</td>
+				            <td>João da silva</td>
+				            <td>12/09/2017</td>
+				            <td>13/09/2017</td>
+				          </tr>
+				         
+				          <tr>
+				        	<td>1</td>
+				            <td>item1</td>
+				            <td>Santo amaro</td>
+				            <td>gustavo</td>
+				            <td>12/09/2017</td>
+				            <td>13/09/2017</td>		          
+				          </tr>
+				          
+				         <tr>
+				            <td>1</td>
+				            <td>item1</td>
+				            <td>bela vista</td>
+				            <td>João da silva</td>
+				            <td>12/09/2017</td>
+				            <td>13/09/2017</td>
+				          </tr>
+				         
+				            <tr>
+				            <td>1</td>
+				            <td>item1</td>
+				            <td>bela vista</td>
+				            <td>João da silva</td>
+				            <td>12/09/2017</td>
+				            <td>13/09/2017</td>
+				          </tr>
+				         
+				         
+				      </tbody>			        
+			       </table>	   
+			    </div> 
+		   </div>
+			  
+			     
+	      <!--Import jQuery before materialize.js-->
+	      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	      <script type="text/javascript" src="js/materialize.min.js"></script>
+	      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	          
+	      
+	      <script>
+	      $(document).ready(function(){
+	    	  $(".btn").sideNav({
+	    		  menuWidth: 300,
+	    		  edge: 'left'
+	    	  });
+	      });
+	      </script>
+	      
+	      
+	      
+	    </body>
+</html>

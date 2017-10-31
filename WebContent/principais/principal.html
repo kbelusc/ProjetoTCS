@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Principal</title>
+</head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+	
+		<!-- Importa��o de jQuery (biblioteca javascript) -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+		 <!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+		
+		<script src="http://materializecss.com/templates/starter-template/js/init.js"></script>
+			
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<body >
+		
+		<ul id="dropdown1" class="dropdown-content">
+		  <li><a href="configurarImage.html">Configurações da conta</a></li>
+		  <li><a href="">Criar doação</a></li>
+		  <li class="divider"></li>
+		  <li><a href="#!">Logout</a></li>
+		</ul>
+		
+		<ul id="mobile-drop" class="side-nav">
+			 <li><a href="configurarImage.html">Configurações da conta</a></li>
+			 <li><a href="">Criar doação</a></li>
+			 <li class="divider"></li>
+			 <li><a href="#!">Logout</a></li>
+		</ul>
+		
+		<nav class="nav-extended">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo center">Logo</a>							
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<!-- Dropdown Trigger -->
+					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+				</ul>
+				<a href="#" data-activates="mobile-drop" class="button-collapse"><i class="material-icons">menu</i></a>	
+			</div>
+			
+			<div class="nav-content">
+				<ul class="tabs tabs-transparent">
+					<li class="tab"><a href="#inicio">inicio</a></li>
+					<li class="tab"><a class="active" href="#test2">Minhas Doaçoes</a></li>
+				</ul>
+			</div> 		 
+		</nav>
+	
+		<div id="inicio" class="col s12" >
+	 		<div class="container" >	
+			   <h2>Cadastrar Doação</h2>
+		 
+			 	<div class="row">
+			 		<form class="col s12 m4 l4"> 	 		
+			 			<div class="input-field class="col" >
+						   <i class="material-icons prefix">local_offer</i>
+							<input class="validate" type="text" id="produto" name="produto"> 
+							<label for="produto">Produto:</label>
+			 			</div>
+					</form>
+				 </div>
+				  
+				  <div class="row">
+					<form class="col s12 m4 l4"> 
+						<div class="input-field class="col" >
+						   <i class="material-icons prefix">iso</i>
+							<input class="validate" type="number" id="quantidade" name="quantidade"> 
+							<label for="quantidade">Quantidade:</label>					
+						</div>
+					</form>			
+				  </div>
+					
+				  <div class="row">
+					  <form class="col s12 m4 l4">
+						<div class="input-field class="col">
+						 	<i class="material-icons prefix">group</i>
+							 <input class="validate" type="text" id="associacao" name="associacao"> 
+							 <label for="assossiacao">Associação:</label>
+					    </div>
+					  </form>
+				    </div>
+					
+					  
+					<div class="row">
+					  <form class="col s12 m4 l4">
+						<div class="input-field class="col">
+						 	<i class="material-icons prefix">location_on</i>
+							 <input class="validate" type="text" id="endereco" name="endereco"> 
+							 <label for="endereco">Endereço para busca:</label>
+					    </div>
+					  </form>  
+					</div>
+						
+						
+					<div class="row">
+					  <form class="col s12 m4 l4">
+						<div class="input-field class="col">	
+							 <input class="validate" type="file" id="foto" name="foto" placeholder="Foto do produto"> 
+					    </div>
+					  </form>  
+					</div>			
+													  
+					 <div class="row">
+					 	<form class="col s12 m12 l12">			 		
+					  	<button class="btn" type="submit">Cadastrar</button>
+					  	</form>
+					 </div>									
+			   </div>	  			
+		  </div>
+	
+		  <div id="test2" class="col s12">
+			 	<div class="container">
+			 		<div class="row">
+			 	 		<h3> Histórico de doaçoes </h3>
+			 		</div>
+			 	
+			     	 <table class="striped">
+				        <thead>
+				          <tr>
+				              <th>Produto</th>
+				              <th>Data inicial</th>
+				              <th>Data final</th>
+				          </tr>
+				        </thead>
+				
+				      <tbody>
+				          <tr>
+				            <td>camisetas</td>
+				            <td>12/09/2017</td>
+				            <td>12/09/2017</td>
+				          </tr>
+				         
+				          <tr>
+				            <td>calça</td>
+				            <td>11/09/2017</td>
+				            <td>12/09/2017</td>			          
+				          </tr>
+				          
+				          <tr>
+				            <td>produto</td>
+				            <td>data</td>
+				            <td>data</td>
+				          </tr>
+				      </tbody>			        
+			       </table>	   
+			    </div> 
+		   </div>
+	  		   
+	</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Configurar Conta</title>
+		<!-- Importações do Materialize -->
+		<!-- Compiled and minified CSS -->
+	  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+	
+		<!-- Importação de jQuery (biblioteca javascript) -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	  	<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+		
+		<!--Import Google Icon Font-->
+     	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<style>
+				#cartao {						
+							padding: 15px;
+						}
+						
+			#center-div {
+						  position: absolute;
+						  margin: auto;
+						  top: 0;
+						  right: 0;
+						  bottom: 0;
+						  left: 0;
+						  width: 400px;
+						  height: 600px;
+						
+						}
+		
+		</style>
+	
+	</head>
+	 <body background="cinza3.jpg">
+			
+		<div class="container">
+			<div class="row">
+				<div class="col l4 m4 s4">
+					<div id="center-div" class="card white center">
+						<div id="cartao">	
+						<h3>Altere seus dados</h3>
+							<div class="row">
+				 				<form class="col s8 m8 l10"> 	 		
+				 					<div class="input-field" >
+							 			<i class="material-icons prefix">face</i>
+										<input class="validate" type="text" id="nome" name="nome"> 
+										<label for="nome">Nome:</label>
+			 				  		</div>					
+								</form>
+							</div>	
+							
+							<div class="row">
+								<form class="col s8 m8 l10"> 
+									<div class="input-field" >
+									   <i class="material-icons prefix">mail</i>
+										<input class="validate" type="text" id="email" name="email"> 
+										<label for="email">E-mail:</label>					
+									</div>
+								</form>			
+							  </div>
+			
+							<div class="row">
+							  <form class="col s8 m8 l10">
+								<div class="input-field">
+								 	<i class="material-icons prefix">phone</i>
+									 <input class="validate" type="text" id="telefone" name="telefone"> 
+									 <label for="telefone">Número de contato:</label>
+							    </div>
+							  </form>
+						     </div>
+			
+			  
+							<div class="row">
+							  <form class="col s8 m8 l10">
+								<div class="input-field">
+								 	<i class="material-icons prefix">location_on</i>
+									 <input class="validate" type="text" id="endereco" name="endereco"> 
+									 <label for="endereco">Endereço:</label>
+							    </div>
+							  </form>  
+							</div>
+								
+			  
+							 <div class="row">
+							 	<form class="col s12 m12 l12">		 		
+							  	<button class="btn pulse" type="submit">Alterar</button>			  	
+							  	</form>
+							 </div>											
+						</div>				   
+		   		  	</div>
+		  	 	</div> 
+			</div>	 
+		 </div>	
+		
+	</body>
+</html>
